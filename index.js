@@ -3,7 +3,7 @@ var app = express()
 
 // const mongoose = require('mongoose');
 // const config = require('./config/database');
-// const path = require('path');
+const path = require('path');
 
 // mongoose.Promise = global.Promise;
 // mongoose.connect(config.uri, {useNewUrlParser: true}, (err) => {
