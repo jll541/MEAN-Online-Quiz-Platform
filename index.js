@@ -30,6 +30,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/quiz-platform/dist/quiz-platform/index.html'));
   })
   
-  app.listen(8080, () => {
-      console.log("Listening on port 8080")
-  });
+    const PORT = process.env.PORT || 8080;
+    app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+    });
