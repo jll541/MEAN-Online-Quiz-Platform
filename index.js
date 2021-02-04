@@ -40,7 +40,7 @@ const path = require('path');
 // });
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://jll541:kin6ungh@clusterquiz.inacn.mongodb.net/quiz?retryWrites=true&w=majority";
+const uri = "mongodb+srv://jll541:kin6ungh@clusterquiz.inacn.mongodb.net/mean-quiz?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
@@ -55,5 +55,5 @@ app.get('*', (req, res) => {
   
     const PORT = process.env.PORT || 8080;
     app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+    console.log(`THIS WORKS!!!! Our app is running on port ${ PORT }`);
     });
