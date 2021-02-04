@@ -53,7 +53,7 @@ const path = require('path');
 //     res.sendFile(path.join(__dirname, '/', '../build', 'index.html' ));
 //   })
   
-//     const PORT = process.env.PORT || 8080;
-//     app.listen(PORT, () => {
-//     console.log(`THIS WORKS!!!! Our app is running on port ${ PORT }`);
-//     });
+    const PORT = process.env.PORT || 8080;
+    app.listen(PORT, () => {
+    console.log(`THIS WORKS 2!!!! Our app is running on port ${ PORT }`);
+    });
