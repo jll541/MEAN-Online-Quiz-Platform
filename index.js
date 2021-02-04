@@ -39,21 +39,21 @@ const path = require('path');
 //   client.close();
 // });
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://jll541:kin6ungh@clusterquiz.inacn.mongodb.net/mean-quiz?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://jll541:kin6ungh@clusterquiz.inacn.mongodb.net/mean-quiz?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
 
-app.use(express.static('../build'));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/', '../build', 'index.html' ));
-  })
+// app.use(express.static('../build'));
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/', '../build', 'index.html' ));
+//   })
   
-    const PORT = process.env.PORT || 8080;
-    app.listen(PORT, () => {
-    console.log(`THIS WORKS!!!! Our app is running on port ${ PORT }`);
-    });
+//     const PORT = process.env.PORT || 8080;
+//     app.listen(PORT, () => {
+//     console.log(`THIS WORKS!!!! Our app is running on port ${ PORT }`);
+//     });
