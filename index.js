@@ -48,10 +48,10 @@ const path = require('path');
 //   client.close();
 // });
 
-// app.use(express.static('../build'));
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/', '../build', 'index.html' ));
-//   })
+app.use(express.static('../build'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/', '../build', 'index.html' ));
+  })
   
     const PORT = process.env.PORT || 8080;
     app.listen(PORT, () => {
