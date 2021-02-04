@@ -50,7 +50,7 @@ const path = require('path');
 
 app.use('/static', express.static(path.join(__dirname, '../build')));
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/', 'quiz-platform/src/index.html' ));
+    res.sendFile(path.join(__dirname, 'src', '/', 'quiz-platform/src/index.html' ));
   })
   
     const PORT = process.env.PORT || 8080;
