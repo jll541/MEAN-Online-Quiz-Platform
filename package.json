@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordlay/MEAN-Online-Quiz-Platform.git"
+    "url": "git+https://github.com/jll541/MEAN-Online-Quiz-Platform.git"
   },
   "author": "Jordan Layton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jordlay/MEAN-Online-Quiz-Platform/issues"
+    "url": "https://github.com/jll541/MEAN-Online-Quiz-Platform/issues"
   },
-  "homepage": "https://github.com/jordlay/MEAN-Online-Quiz-Platform#readme",
+  "homepage": "https://github.com/jll541/MEAN-Online-Quiz-Platform#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
