@@ -48,12 +48,29 @@ const path = require('path');
 //   client.close();
 // });
 
-app.use('/static', express.static(path.join(__dirname, '../build', 'quiz-platform/src/index.html' )));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname,'/', 'quiz-platform/src/index.html' ));
-  })
+// app.use('/static', express.static(path.join(__dirname, '../build', 'quiz-platform/src/index.html' )));
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname,'/', 'quiz-platform/src/index.html' ));
+//   })
   
-    const PORT = process.env.PORT || 8080;
-    app.listen(PORT, () => {
-    console.log(`THIS WORKS 2!!!! Our app is running on port ${ PORT }`);
-    });
+//     const PORT = process.env.PORT || 8080;
+//     app.listen(PORT, () => {
+//     console.log(`THIS WORKS 2!!!! Our app is running on port ${ PORT }`);
+//     });
+const express = require('express');
+const app = express();
+const path = require('path');
+const port = process.env.PORT || 8000;
+const server = require('http').Server(app);
+
+app.use(express.static(__dirname + '/src'));
+
+server.listen(port, function() {
+    console.log("App running on port " + port);
+})
+
+// PathLocationStrategy
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/src/index.html'));
+})
