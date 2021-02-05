@@ -48,7 +48,7 @@ const path = require('path');
 // //   client.close();
 // // });
 
-app.use('/static', express.static(path.join(__dirname, 'quiz-platform/src/index.html' )));
+app.use('/static', express.static(path.join(__dirname, 'quiz-platform/src' )));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/quiz-platform/src/index.html' ));
   })
