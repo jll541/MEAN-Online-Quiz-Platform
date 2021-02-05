@@ -63,7 +63,7 @@ const path = require('path');
 const port = process.env.PORT || 8000;
 const server = require('http').Server(app);
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/quiz-platform'));
 
 server.listen(port, function() {
     console.log("App running on port " + port);
@@ -72,5 +72,5 @@ server.listen(port, function() {
 // PathLocationStrategy
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + 'quiz-platform/src/index.html' ));
 })
