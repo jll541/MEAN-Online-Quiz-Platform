@@ -1,9 +1,9 @@
-// var express = require('express')
-// var app = express()
+var express = require('express')
+var app = express()
 
 // // // const mongoose = require('mongoose');
 // // // const config = require('./config/database');
-// const path = require('path');
+const path = require('path');
 
 // // mongoose.Promise = global.Promise;
 // // mongoose.connect(config.uri, {useNewUrlParser: true}, (err) => {
@@ -48,52 +48,52 @@
 // //   client.close();
 // // });
 
-// app.use('/static', express.static(path.join(__dirname, 'quiz-platform/src/index.html' )));
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/quiz-platform/src/index.html' ));
-//   })
+app.use('/static', express.static(path.join(__dirname, 'quiz-platform/src/index.html' )));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/quiz-platform/src/index.html' ));
+  })
   
-//     const PORT = process.env.PORT || 8080;
-//     app.listen(PORT, () => {
-//     console.log(`THIS WORKS 2!!!! Our app is running on port ${ PORT }`);
-//     });
-// // const express = require('express');
-// // const app = express();
-// // const path = require('path');
-// // const port = process.env.PORT || 8000;
-// // const server = require('http').Server(app);
+    const PORT = process.env.PORT || 8080;
+    app.listen(PORT, () => {
+    console.log(`THIS WORKS 2!!!! Our app is running on port ${ PORT }`);
+    });
+// const express = require('express');
+// const app = express();
+// const path = require('path');
+// const port = process.env.PORT || 8000;
+// const server = require('http').Server(app);
 
-// // app.use(express.static(__dirname + '/quiz-platform'));
+// app.use(express.static(__dirname + '/quiz-platform'));
 
-// // server.listen(port, function() {
-// //     console.log("App running on port " + port);
-// // })
+// server.listen(port, function() {
+//     console.log("App running on port " + port);
+// })
 
-// // // PathLocationStrategy
+// // PathLocationStrategy
 
-// // app.get('/*', function(req, res) {
-// //     res.sendFile(path.join(__dirname + '/quiz-platform/src/index.html' ));
-// // })
+// app.get('/*', function(req, res) {
+//     res.sendFile(path.join(__dirname + '/quiz-platform/src/index.html' ));
+// })
 
-const express = require('express');
-const app = express();
-const path = require('path');
-const port = process.env.PORT || 8000;
-const server = require('http').Server(app);
+// const express = require('express');
+// const app = express();
+// const path = require('path');
+// const port = process.env.PORT || 8000;
+// const server = require('http').Server(app);
 
-app.use(express.static(__dirname, 'dist', {index: false}));
+// app.use(express.static(__dirname, 'dist', {index: false}));
 
 
-server.listen(port, function() {
-    console.log("App running on port " + port);
-})
+// server.listen(port, function() {
+//     console.log("App running on port " + port);
+// })
 
-// PathLocationStrategy
+// // PathLocationStrategy
 
-app.get('', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
-});
+// app.get('', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'src', 'index.html'));
+// });
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
-});
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'src', 'index.html'));
+// });
