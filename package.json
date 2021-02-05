@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/jll541/MEAN-Online-Quiz-Platform/issues"
   },
-  "homepage": "https://https://mean-online-pub-quiz.herokuapp.com/",
+  "homepage": "https://mean-online-pub-quiz.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
