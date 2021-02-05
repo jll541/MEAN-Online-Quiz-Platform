@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/jll541/MEAN-Online-Quiz-Platform/issues"
   },
-  "homepage": "https://github.com/jll541/MEAN-Online-Quiz-Platform#readme",
+  "homepage": "https://https://mean-online-pub-quiz.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
